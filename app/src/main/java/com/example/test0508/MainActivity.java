@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
     }
+
     public void addData(View view) {
         Intent intent = new Intent(this, AddDataActivity.class);
         startActivityForResult(intent, 1);
@@ -59,4 +60,5 @@ public class MainActivity extends AppCompatActivity {
             stuDataList.add(new StuData(url, name, height));
             adapter.notifyDataSetChanged();
         }
+    }
 }
